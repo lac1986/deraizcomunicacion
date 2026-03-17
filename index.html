@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ─── SEO BÁSICO ─── -->
+<title>De Raíz Comunicación | Agencia de Comunicación Estratégica</title>
+<meta name="description" content="Agencia de comunicación estratégica. Transformamos complejidad en claridad: auditoría, posicionamiento, estrategia omnicanal, producción de contenido e identidad con IA.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://deraizcomunicacion.com/">
+
+<!-- ─── OPEN GRAPH ─── -->
+<meta property="og:type"        content="website">
+<meta property="og:url"         content="https://deraizcomunicacion.com/">
+<meta property="og:title"       content="De Raíz Comunicación | Agencia de Comunicación Estratégica">
+<meta property="og:description" content="Transformamos complejidad en claridad. Auditoría 360°, posicionamiento, estrategia omnicanal, producción híbrida humano + IA y gestión de crisis.">
+<meta property="og:image"       content="https://deraizcomunicacion.com/og-image.jpg">
+<meta property="og:locale"      content="es_AR">
+<meta property="og:site_name"   content="De Raíz Comunicación">
+
+<!-- ─── TWITTER CARD ─── -->
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="De Raíz Comunicación | Agencia de Comunicación Estratégica">
+<meta name="twitter:description" content="Transformamos complejidad en claridad. Estrategia, contenido e identidad desde la raíz.">
+<meta name="twitter:image"       content="https://deraizcomunicacion.com/og-image.jpg">
+
+<!-- ─── SCHEMA.ORG JSON-LD ─── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "De Raíz Comunicación",
+  "url": "https://deraizcomunicacion.com",
+  "logo": "https://deraizcomunicacion.com/logo.svg",
+  "description": "Agencia de comunicación estratégica especializada en auditoría de reputación, posicionamiento, estrategia omnicanal, producción de contenido híbrida humano + IA, gestión de crisis y diseño de identidad con IA.",
+  "email": "hola@deraizcomunicacion.com",
+  "foundingDate": "2024",
+  "numberOfEmployees": { "@type": "QuantitativeValue", "value": 4 },
+  "areaServed": { "@type": "Country", "name": "Argentina" },
+  "knowsLanguage": "es",
+  "sameAs": [],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de comunicación",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Auditoría 360° y Reputación" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Posicionamiento y Arquitectura de Mensaje" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Estrategia Omnicanal" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Producción Híbrida Humano + IA" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gestión de Crisis y Desinformación" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Identidad de IA y System Design" } }
+    ]
+  }
+}
+</script>
+
+<!-- ─── PERFORMANCE: preconnect + fuente optimizada ─── -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --crema: #ECEADF;
+    --rojo:  #8B1A1A;
+    --verde: #AAEE22;
+    --negro: #0D0D0D;
+    --gris:  #666;
+  }
+
+  body {
+    background: var(--crema);
+    color: var(--negro);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* Textura papel sutil */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+  }
+
+  /* ─── ANIMACIONES DE ENTRADA ─── */
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  @keyframes cardIn {
+    from { opacity: 0; transform: translateY(14px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 0.4; transform: scale(1); }
+    50%       { opacity: 0.9; transform: scale(1.3); }
+  }
+
+  .brand-row  { animation: fadeDown 0.7s ease both; }
+  .sep        { animation: fadeIn  0.5s ease 0.5s both; }
+  .tagline    { animation: fadeUp  0.6s ease 0.6s both; }
+
+  .card-wrap:nth-child(1) { animation: cardIn 0.5s ease 0.75s both; }
+  .card-wrap:nth-child(2) { animation: cardIn 0.5s ease 0.85s both; }
+  .card-wrap:nth-child(3) { animation: cardIn 0.5s ease 0.95s both; }
+  .card-wrap:nth-child(4) { animation: cardIn 0.5s ease 1.05s both; }
+  .card-wrap:nth-child(5) { animation: cardIn 0.5s ease 1.15s both; }
+  .card-wrap:nth-child(6) { animation: cardIn 0.5s ease 1.25s both; }
+
+  .hablemos-wrap { animation: fadeUp 0.6s ease 1.35s both; }
+  footer         { animation: fadeIn 0.5s ease 1.5s both; }
+
+  /* ─── HEADER ─── */
+  header {
+    text-align: center;
+    padding: 2.8vh 48px 1.2vh;
+    flex-shrink: 0;
+  }
+
+  .brand-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .isologo { width: 62px; height: 62px; flex-shrink: 0; }
+
+  h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(38px, 6.5vw, 90px);
+    font-weight: 800;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: var(--negro);
+  }
+
+  .sep {
+    width: 40px;
+    height: 3px;
+    background: var(--rojo);
+    margin: 1.4vh auto 1.2vh;
+    border-radius: 2px;
+  }
+
+  .tagline {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(10px, 1vw, 14px);
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--negro);
+  }
+
+  .tag-claridad {
+    background: var(--verde);
+    color: var(--negro);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: clamp(10px, 1vw, 14px);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 4px 12px 5px;
+    line-height: 1;
+  }
+
+  /* ─── GRID ─── */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+    padding: 1.8vh 48px;
+    max-width: 1320px;
+    width: 100%;
+    margin: 0 auto;
+    flex: 1;
+    min-height: 0;
+  }
+
+  /* ─── FLIP CARD ─── */
+  .card-wrap {
+    perspective: 1200px;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+  }
+
+  /* Hint de interacción: punto que pulsa en la primera tarjeta hasta que el usuario interactúa */
+  .card-wrap:first-child .hint-dot {
+    position: absolute;
+    top: 10px; left: 12px;
+    width: 6px; height: 6px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 50%;
+    animation: pulse 1.8s ease-in-out 2s 4;
+    z-index: 10;
+    pointer-events: none;
+  }
+  .hint-dot.hide { display: none; }
+
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.65s cubic-bezier(0.45, 0, 0.55, 1);
+  }
+
+  .card-wrap.flipped .card-inner { transform: rotateY(180deg); }
+
+  .card-face {
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .card-front { background: var(--rojo); }
+
+  .card-front .text-area {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 24px 4px;
+    text-align: center;
+  }
+
+  .card-front h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(12px, 1.2vw, 15px);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1.35;
+    color: white;
+  }
+
+  .card-back {
+    background: var(--verde);
+    transform: rotateY(180deg);
+  }
+
+  .card-back .text-area {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 24px 4px;
+    text-align: center;
+  }
+
+  .card-back p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(12px, 1.2vw, 15px);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    line-height: 1.35;
+    color: var(--negro);
+  }
+
+  .icon-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 14px 12px;
+    font-size: 15px;
+    line-height: 1;
+    opacity: 0.4;
+  }
+  .card-front .icon-row { color: white; }
+  .card-back  .icon-row { color: var(--negro); }
+
+  /* ─── HABLEMOS ─── */
+  .hablemos-wrap {
+    text-align: center;
+    padding: 1.6vh 48px 1.8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .hablemos {
+    display: inline-block;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: clamp(46px, 7vw, 96px);
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--negro);
+    text-decoration: none;
+    position: relative;
+    line-height: 1;
+    transition: color 0.28s ease;
+    /* Subrayado verde permanente y delgado */
+    border-bottom: 2px solid rgba(170, 238, 34, 0.45);
+    padding-bottom: 4px;
+  }
+
+  .hablemos::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; left: 0;
+    width: 0; height: 2px;
+    background: var(--verde);
+    transition: width 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hablemos:hover { color: var(--rojo); }
+  .hablemos:hover::after { width: 100%; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    border-top: 1px solid rgba(0,0,0,0.12);
+    padding: 1.6vh 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+  }
+
+  .footer-isologo { width: 22px; height: 22px; flex-shrink: 0; }
+
+  .footer-copy {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gris);
+  }
+
+  .footer-links { display: flex; align-items: center; list-style: none; }
+  .footer-links li { display: flex; align-items: center; }
+  .footer-links li + li::before {
+    content: '·';
+    color: var(--gris);
+    padding: 0 10px;
+    font-size: 13px;
+  }
+  .footer-links a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gris);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-links a:hover { color: var(--negro); }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 900px) {
+    body { height: auto; overflow: auto; }
+    .grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(3, auto); padding: 24px 20px; gap: 10px; flex: none; }
+    .card-wrap { height: 150px; }
+    header { padding: 36px 20px 18px; }
+    .hablemos-wrap { padding: 32px 20px 36px; }
+    footer { flex-direction: column; gap: 12px; padding: 16px 20px; }
+  }
+  @media (max-width: 520px) {
+    .grid { grid-template-columns: 1fr; }
+    .brand-row { flex-direction: column; gap: 8px; }
+    .card-wrap { height: 130px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand-row">
+    <svg class="isologo" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="De Raíz Comunicación - isologo">
+      <path d="M27,27 Q13,13 27,7 Q41,13 27,27" fill="#8B1A1A" opacity="0.9"/>
+      <path d="M27,27 Q41,13 47,27 Q41,41 27,27" fill="#8B1A1A" opacity="0.72"/>
+      <path d="M27,27 Q41,41 27,47 Q13,41 27,27" fill="#AAEE22" opacity="0.95"/>
+      <path d="M27,27 Q13,41 7,27 Q13,13 27,27" fill="#AAEE22" opacity="0.78"/>
+      <circle cx="27" cy="27" r="5.5" fill="#ECEADF"/>
+      <circle cx="27" cy="27" r="2.8" fill="#0D0D0D"/>
+    </svg>
+    <h1>DE RAÍZ COMUNICACIÓN</h1>
+  </div>
+  <div class="sep"></div>
+  <p class="tagline">
+    TRANSFORMAMOS COMPLEJIDAD EN
+    <span class="tag-claridad">CLARIDAD</span>
+  </p>
+</header>
+
+<main class="grid">
+
+  <div class="card-wrap">
+    <span class="hint-dot"></span>
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="text-area"><h2>AUDITORÍA 360° &amp; REPUTACIÓN</h2></div>
+        <div class="icon-row">↻</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="text-area"><p>ANALIZAMOS TU COMUNICACIÓN Y DETECTAMOS OPORTUNIDADES</p></div>
+        <div class="icon-row">↻</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-wrap">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="text-area"><h2>POSICIONAMIENTO &amp; ARQUITECTURA DE MENSAJE</h2></div>
+        <div class="icon-row">↻</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="text-area"><p>DEFINIMOS TU MENSAJE Y TU DIFERENCIAL</p></div>
+        <div class="icon-row">↻</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-wrap">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="text-area"><h2>ESTRATEGIA OMNICANAL</h2></div>
+        <div class="icon-row">↻</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="text-area"><p>DISEÑAMOS UNA ESTRATEGIA CLARA PARA CADA CANAL</p></div>
+        <div class="icon-row">↻</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-wrap">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="text-area"><h2>PRODUCCIÓN HÍBRIDA HUMANO + IA</h2></div>
+        <div class="icon-row">↻</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="text-area"><p>CREAMOS CONTENIDO PROFESIONAL ESTRATÉGICO</p></div>
+        <div class="icon-row">↻</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-wrap">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="text-area"><h2>GESTIÓN DE CRISIS &amp; DESINFORMACIÓN</h2></div>
+        <div class="icon-row">↻</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="text-area"><p>PROTEGEMOS TU REPUTACIÓN</p></div>
+        <div class="icon-row">↻</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-wrap">
+    <div class="card-inner">
+      <div class="card-face card-front">
+        <div class="text-area"><h2>IDENTIDAD DE IA &amp; SYSTEM DESIGN</h2></div>
+        <div class="icon-row">↻</div>
+      </div>
+      <div class="card-face card-back">
+        <div class="text-area"><p>IMPLEMENTAMOS IA SIN PERDER TU IDENTIDAD</p></div>
+        <div class="icon-row">↻</div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- Texto para crawlers: el contenido del reverso de las tarjetas no es visible para Google -->
+<div style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;" aria-hidden="true">
+  <p>Analizamos tu comunicación y detectamos oportunidades</p>
+  <p>Definimos tu mensaje y tu diferencial</p>
+  <p>Diseñamos una estrategia clara para cada canal</p>
+  <p>Creamos contenido profesional estratégico</p>
+  <p>Protegemos tu reputación</p>
+  <p>Implementamos IA sin perder tu identidad</p>
+</div>
+
+<div class="hablemos-wrap">
+  <a href="mailto:hola@deraizcomunicacion.com" class="hablemos">HABLEMOS</a>
+</div>
+
+<footer>
+  <a href="#" class="footer-brand">
+    <svg class="footer-isologo" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
+      <path d="M27,27 Q13,13 27,7 Q41,13 27,27" fill="#8B1A1A" opacity="0.9"/>
+      <path d="M27,27 Q41,13 47,27 Q41,41 27,27" fill="#8B1A1A" opacity="0.72"/>
+      <path d="M27,27 Q41,41 27,47 Q13,41 27,27" fill="#AAEE22" opacity="0.95"/>
+      <path d="M27,27 Q13,41 7,27 Q13,13 27,27" fill="#AAEE22" opacity="0.78"/>
+      <circle cx="27" cy="27" r="5.5" fill="#ECEADF"/>
+      <circle cx="27" cy="27" r="2.8" fill="#0D0D0D"/>
+    </svg>
+    <span class="footer-copy">© 2026 DE RAÍZ COMUNICACIÓN</span>
+  </a>
+  <ul class="footer-links">
+    <li><a href="#">CONTACTO</a></li>
+    <li><a href="#">SERVICIOS</a></li>
+    <li><a href="#">PRIVACIDAD</a></li>
+  </ul>
+</footer>
+
+<script>
+  const cards = document.querySelectorAll('.card-wrap');
+  const total = cards.length;
+  let resetting = false;
+
+  function checkAllFlipped() {
+    const flippedCount = document.querySelectorAll('.card-wrap.flipped').length;
+    if (flippedCount === total && !resetting) {
+      resetting = true;
+      setTimeout(() => {
+        cards.forEach((card, i) => {
+          setTimeout(() => card.classList.remove('flipped'), i * 80);
+        });
+        setTimeout(() => { resetting = false; }, total * 80 + 700);
+      }, 3000);
+    }
+  }
+
+  cards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      if (resetting) return;
+      if (!card.classList.contains('flipped')) {
+        card.classList.add('flipped');
+        // Esconder hint dot al primer hover
+        const dot = card.querySelector('.hint-dot');
+        if (dot) dot.classList.add('hide');
+        checkAllFlipped();
+      }
+    });
+    card.addEventListener('click', () => {
+      if (resetting) return;
+      if (!card.classList.contains('flipped')) {
+        card.classList.add('flipped');
+        const dot = card.querySelector('.hint-dot');
+        if (dot) dot.classList.add('hide');
+        checkAllFlipped();
+      }
+    });
+  });
+</script>
+</body>
+</html>
